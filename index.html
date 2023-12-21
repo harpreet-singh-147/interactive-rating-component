@@ -13,9 +13,11 @@
 
   <main class="main">
 
+
+
     <form class="card-rating">
       <div class="card-rating__star-icon-container">
-        <img src="images/icon-star.svg" alt="" class="card-rating__icon">
+        <img src="images/icon-star.svg" alt="Star rating icon" class="card-rating__icon">
       </div>
 
       <header class="card-rating__header">
@@ -28,19 +30,20 @@
       </p>
 
       <div class="card-rating__btn-container">
-        <button class="card-rating_btn" type="button">1</button>
-        <button class="card-rating_btn" type="button">2</button>
-        <button class="card-rating_btn" type="button">3</button>
-        <button class="card-rating_btn" type="button">4</button>
-        <button class="card-rating_btn" type="button">5</button>
+        <button class="card-rating_btn" type="button" aria-label="Rate 1 out of 5">1</button>
+        <button class="card-rating_btn" type="button" aria-label="Rate 2 out of 5">2</button>
+        <button class="card-rating_btn" type="button" aria-label="Rate 3 out of 5">3</button>
+        <button class="card-rating_btn" type="button" aria-label="Rate 4 out of 5">4</button>
+        <button class="card-rating_btn" type="button" aria-label="Rate 5 out of 5">5</button>
       </div>
 
       <button class="card-rating__btn-submit" type="submit">Submit</button>
     </form>
 
     <article class="card__thanks">
+      <img src="images/icon-reload.svg" alt="Reload for another rating" class="reload-icon" title="Reload">
       <div class="card__thanks-img-container">
-        <img src="images/illustration-thank-you.svg" alt="" class="card_thanks-img">
+        <img src="images/illustration-thank-you.svg" alt="Thank you illustration" class="card_thanks-img">
       </div>
 
       <p class="card_thanks-rating"></p>
