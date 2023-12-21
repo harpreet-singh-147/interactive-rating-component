@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --body-background: hsl(213, 19%, 18%);
+  --card-bg: hsl(216, 12%, 8%);
+  --selected: hsl(217, 12%, 63%);
+  --text-colour: hsl(216, 12%, 54%);
+  --btn-color: hsl(25, 97%, 53%);
+  --final-rating: hsl(25, 97%, 53%);
+  --offset-white: #f8f8f8;
+}
+
+/* hsl(216, 12%, 8%)
+hsl(213, 19%, 18%)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background: var(--body-background);
+  color: #fff;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../design/desktop-thank-you-state.jpg'); */
+  background-size: contain;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-rating {
+  display: none;
+  margin-left: -11.5rem;
+  background: var(--card-bg);
+  width: 517px;
+  height: 519px;
+  padding: 4em;
+  border-radius: 4rem;
+}
+
+.card-rating__star-icon-container {
+  width: 6.3rem;
+  height: 6.3rem;
+  background: var(--body-background);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.card-rating__icon {
+  width: 2.05rem;
+}
+
+.card-rating__header {
+  margin-top: 4rem;
+}
+
+.card-rating__heading {
+  color: var(--offset-white);
+  font-size: 3.49rem;
+}
+
+.card-rating__feedback-txt {
+  margin-top: 1.55rem;
+  line-height: 1.5;
+  font-size: 1.89rem;
+  color: var(--text-colour);
+}
+
+.card-rating__btn-container {
+  margin-top: 3.5rem;
+  display: flex;
+  gap: 2.6em;
+}
+
+.card-rating_btn {
+  cursor: pointer;
+  width: 6.5rem;
+  height: 6.5rem;
+  background: var(--body-background);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: none;
+  color: var(--text-colour);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-rating_btn:hover {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+
+.card-rating__btn-submit {
+  padding: 1.8rem 2rem;
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  cursor: pointer;
+  border-radius: 5rem;
+  width: 98%;
+  text-transform: uppercase;
+  margin: 3.9rem auto 0 auto;
+  transition: all 0.3s ease;
+}
+
+.card-rating__btn-submit:hover {
+  background-color: var(--offset-white);
+  color: var(--btn-color);
+}
+
+.card__thanks {
+  margin-left: -11.5rem;
+  background: var(--card-bg);
+  width: 517px;
+  height: 519px;
+  padding: 4em;
+  border-radius: 4rem;
+  text-align: center;
+}
+
+.card__thanks-img-container {
+  margin-top: 1.7rem;
+}
+
+.card_thanks-img {
+  width: 20.9rem;
+}
+
+.card_thanks-rating {
+  margin-top: 3.5rem;
+  font-size: 1.9rem;
+  color: var(--final-rating);
+  background: var(--body-background);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+.card__thanks-msg {
+  margin-top: 4rem;
+  font-size: 3.5rem;
+  color: var(--offset-white);
+}
+
+.card__thanks-contact {
+  margin-top: 1.6rem;
+  font-size: 1.94rem;
+  line-height: 1.4;
+  color: var(--text-colour);
+}
+
+.attribution {
+  position: absolute;
+  font-size: 1.1rem;
+  text-align: center;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
