@@ -37,7 +37,6 @@ body {
 }
 
 .card-rating {
-  /* display: none; */
   background: var(--card-bg);
   width: 517px;
   height: 519px;
@@ -130,6 +129,18 @@ body {
   padding: 4em;
   border-radius: 4rem;
   text-align: center;
+  position: relative;
+}
+
+.reload-icon {
+  position: absolute;
+  background-color: var(--btn-color);
+  top: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  padding: 1em;
+  width: 4rem;
+  cursor: pointer;
 }
 
 .card__thanks-img-container {
@@ -175,4 +186,209 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-rating {
+    width: 95%;
+  }
+
+  .card-rating__star-icon-container {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .card-rating__icon {
+    width: 2rem;
+  }
+
+  .card-rating__btn-container {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .card-rating_btn {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .card__thanks {
+    width: 95%;
+  }
+
+  .card__thanks-img-container {
+    margin-top: 1.7rem;
+  }
+
+  .card_thanks-img {
+    width: 20.9rem;
+  }
+
+  .card_thanks-rating {
+    margin-top: 3.5rem;
+    font-size: 1.9rem;
+    color: var(--final-rating);
+    background: var(--body-background);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+  }
+
+  .card__thanks-msg {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+    color: var(--offset-white);
+  }
+
+  .card__thanks-contact {
+    margin-top: 1.6rem;
+    font-size: 1.94rem;
+    line-height: 1.4;
+    color: var(--text-colour);
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .card-rating {
+    width: 90%;
+    padding: 3em;
+    height: 480px;
+    border-radius: 2em;
+  }
+
+  .card-rating__star-icon-container {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card-rating__header {
+    margin-top: 4rem;
+  }
+
+  .card-rating__heading {
+    font-size: 3rem;
+  }
+
+  .card-rating__feedback-txt {
+    font-size: 1.7rem;
+  }
+
+  .card-rating_btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card-rating__btn-submit {
+    padding: 1.4rem 2rem;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-rating {
+    width: 90%;
+    padding: 2.8em;
+    height: 385px;
+  }
+
+  .card-rating__header {
+    margin-top: 2rem;
+  }
+
+  .card-rating__heading {
+    font-size: 2.8rem;
+  }
+
+  .card-rating__feedback-txt {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .card-rating__btn-container {
+    margin-top: 2.7rem;
+  }
+
+  .card-rating_btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.55rem;
+  }
+
+  .card-rating__btn-submit {
+    font-size: 1.5rem;
+    margin: 2.5rem auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card__thanks {
+    width: 88%;
+    border-radius: 2em;
+    padding: 2em;
+    height: 400px;
+  }
+
+  .reload-icon {
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 0.8em;
+    width: 3.5rem;
+  }
+
+  .card__thanks-img-container {
+    margin-top: 1.7rem;
+  }
+
+  .card_thanks-img {
+    width: 16rem;
+  }
+
+  .card_thanks-rating {
+    margin-top: 2.3rem;
+    font-size: 1.55rem;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .card__thanks-msg {
+    margin-top: 3rem;
+    font-size: 2.55rem;
+  }
+
+  .card__thanks-contact {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .card-rating {
+    width: 96%;
+    padding: 1.8em;
+    height: 385px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card-rating {
+    width: 98%;
+    padding: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .card-rating_btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
 }
