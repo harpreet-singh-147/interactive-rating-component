@@ -2,6 +2,7 @@ const ratingForm = document.querySelector('.card-rating');
 const ratingsBtn = document.querySelectorAll('.card-rating_btn');
 const ratingText = document.querySelector('.card_thanks-rating');
 const thanksCard = document.querySelector('.card__thanks');
+const reloadIcon = document.querySelector('.reload-icon');
 
 let rating = null;
 let currentRatingBtn = null;
@@ -36,4 +37,8 @@ ratingForm.addEventListener('submit', e => {
   ratingForm.style.display = 'none';
   thanksCard.style.display = 'block';
   ratingText.textContent = `You selected ${rating} out of 5`;
+});
+
+reloadIcon.addEventListener('click', () => {
+  location.reload();
 });
