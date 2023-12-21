@@ -137,10 +137,16 @@ body {
   background-color: var(--btn-color);
   top: 2rem;
   right: 2rem;
-  border-radius: 50%;
-  padding: 1em;
-  width: 4rem;
   cursor: pointer;
+  border: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.reload-icon img {
+  width: 2rem;
 }
 
 .card__thanks-img-container {
@@ -176,15 +182,22 @@ body {
 
 .attribution {
   position: absolute;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  color: var(--offset-white);
 }
 
 .attribution a {
+  color: var(--offset-white);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
   color: hsl(228, 45%, 44%);
 }
 
