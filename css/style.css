@@ -37,7 +37,11 @@ body {
 }
 
 .card-rating {
-  background: var(--card-bg);
+  background: linear-gradient(
+    to bottom,
+    hsl(212, 20%, 16%),
+    hsl(217, 28%, 13%)
+  );
   width: 517px;
   height: 519px;
   padding: 4em;
@@ -123,7 +127,11 @@ body {
 
 .card__thanks {
   display: none;
-  background: var(--card-bg);
+  background: linear-gradient(
+    to bottom,
+    hsl(212, 20%, 16%),
+    hsl(217, 28%, 13%)
+  );
   width: 517px;
   height: 519px;
   padding: 4em;
